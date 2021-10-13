@@ -48,6 +48,15 @@ $(document).ready(function() {
         $("#value_price").hide();
     }
 
+     $("#inner-content").appendTo("#content");
+
+    $("#thumbnail img").click(function(){
+        var src = $(this).attr('src');
+        $(".main-img").fadeOut("slow");
+        $(".main-img").attr('src', src);
+        $(".main-img").fadeIn("slow");
+    });
+
     function image_ancor(id) {
         $("#"+id+" img").append(function(){
           var go = $(this).attr('src');

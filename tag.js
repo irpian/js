@@ -1,4 +1,4 @@
-function tagBlog(elem,clas){
+function irpieTag(elem,clas){
   var url      = window.location.href;
   var jmlSlash = url.split("/").length - 1;
   if(jmlSlash > 3){

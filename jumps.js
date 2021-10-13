@@ -71,7 +71,7 @@
     $(document).ready(function() {
 
         var index = Math.floor(Math.random() * videos.length);
-        var setVideo = '<iframe width="100%" height="200"   src="https://www.youtube.com/embed/' + videos[index] + '" frameborder="0" allowfullscreen></iframe>';
+        var setVideo = '<iframe width="100%" height="400"   src="https://www.youtube.com/embed/' + videos[index] + '" frameborder="0" allowfullscreen></iframe>';
         $("#jump-video").html(setVideo);
 
         var index_2 = Math.floor(Math.random() * videos_2.length);
