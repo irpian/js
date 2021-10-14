@@ -56,7 +56,7 @@
 
         //generate url
         function generateDataUrlImg(randomUrl) { 
-            var elems = $('a.generate-jump-img');
+            var elems = $('a.jump-url');
             for (var i = 0; i < elems.length; i++){
                 elems[i]['href'] = randomUrl +"?data="+btoa(elems[i]['href']+"|"+elems[i]['title']); 
             }
