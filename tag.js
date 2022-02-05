@@ -1,8 +1,7 @@
-function tagBlog(elem,clas){
+function irpieTag(elem,clas){
   var url      = window.location.href;
   var jmlSlash = url.split("/").length - 1;
   if(jmlSlash > 3){
-    //alert(jmlSlash);
     var isi = $("#tag").html();
     var replace1 = "|#"+isi+"#|";
     var replace2 = replace1.replace("|#","<"+elem+" class='"+clas+"'>");
