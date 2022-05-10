@@ -17,29 +17,25 @@
             background-color: #f5f5f5;
             font-family: arial;
         }
-        
-        .wrapper {
-            background-color: #fff;
-            max-width: 600px;
-            margin-top: 24px;
-            margin-bottom: 12px;
-            border-radius: 6px;
-        }
 
          a {
             text-decoration: none!important;
         }
 
         /* custom class */
+        .wrapper {
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
         .tag {
             background-color:#FFC722;
             padding:4px 8px;
             margin:4px;
             border-radius:4px;
-            float:left;
             width:inherit;
             font-size: 14px;
             color: #333;
+            font-weight: bold;
         }
         .btn {
             color : #fff !important;
@@ -75,7 +71,7 @@
     </style>
     <script type="text/javascript">
         $(document).ready(function(){
-            irpieTag("h3","tag");
+            irpieTag("span","tag");
         });
     </script>
 
@@ -86,7 +82,7 @@
 
                     <div class="col100">
                         <div id="inner-content" class="justify pd-tb-xl">
-                            Content Here
+                            Description
                         </div>
                         <div class="col50 res2-1 left">
                             <div class="content-m">
@@ -176,11 +172,9 @@
                         </div>
                         <div class="clear"></div>
                     </div>
-                    <div class="content-m" id="content">
-                    </div>
-                    <div class="content-m">
-                        Minus : 
-                    </div>
+
+                    <div class="content-m" id="content"><!-- content move here --></div>
+
                     <div class="content-m" id="keyword">
                         <table class="table table-clear table-line table-m full">
                             <tbody>
@@ -191,7 +185,9 @@
                             </tbody>
                         </table>
                     </div>
+
                     <br>
+                    <!-- tag content -->
                     <div id="tag">irpian, irpie, excrozer, bang irpie, excrozer design, nama toko, jual, murah, moyudan, </div>
                     <div class="clear"></div>
             </div>
