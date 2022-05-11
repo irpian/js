@@ -4,7 +4,7 @@ var jump_url = [
                         'https://zirpie.blogspot.com',
                         'https://rabbit-tank.blogspot.com',
                         'https://toko-terserah.blogspot.com',
-                        'https://susahla.blogspot.com',
+                        'https://susahlaku.blogspot.com',
                         ];
 
 var videos = [
