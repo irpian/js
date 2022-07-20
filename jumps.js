@@ -1,4 +1,5 @@
     $(document).ready(function() {
+        //format ?parameter=value
         function GetURLParameter(sParam) {
             var sPageURL = window.location.search.substring(1);
             var sURLVariables = sPageURL.split('%26');
@@ -15,6 +16,23 @@
                     }
                 }
             }
+        }
+
+       //format /parameter_1/value_1/parameter_2/value_2
+       function GetParameter(parameter) {
+                var path = window.location.pathname.substring(1);
+                var url_variable = path.split('/');
+                for (var i = 0; i < url_variable.length; i++) {
+                    var parameter_name = url_variable[i];
+                    if (parameter_name == parameter) {
+                        if (typeof url_variable[i+1] != "undefined") {
+                            var return_parameter = decodeURIComponent(url_variable[i+1]).replace("?m=1","").replace("&m=1","");
+                            return return_parameter;
+                        } else {
+                            return null;
+                        }
+                    }
+                }
         }
 
         function blink() {
