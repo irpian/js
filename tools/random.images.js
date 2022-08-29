@@ -58,15 +58,17 @@ var random_images = [
 
 function random_image(elem, attr, random_images) {
     var elems = document.getElementsByTagName(elem);
-    var rnd_index = Math.floor(Math.random() * random_images.length);
-    for (var i = 0; i < elems.length; i++)
+    for (var i = 0; i < elems.length; i++) {
+        var rnd_index = Math.floor(Math.random() * random_images.length);
         elems[i][attr] = random_images[rnd_index];
+    }
 }
 
 window.onload = function(){
     random_image('img', 'src' , random_images);
 }
 
+
 //var script = document.createElement('script');
-//script.src = "";
+//script.src = "https://cdn.jsdelivr.net/gh/irpian/js@master/tools/random.images.js";
 //document.head.appendChild(script)
