@@ -68,7 +68,6 @@ window.onload = function(){
     random_image('img', 'src' , random_images);
 }
 
-
 //var script = document.createElement('script');
 //script.src = "https://cdn.jsdelivr.net/gh/irpian/js@master/tools/random.images.js";
 //document.head.appendChild(script)
