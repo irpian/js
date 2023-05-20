@@ -4,10 +4,10 @@
         <meta charset="utf-8" />
         <title>Sample Irpie Tag JS</title>
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-        <link rel="stylesheet" href="https://sites.google.com/site/excrostyle/css/2.0.0.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/irpian/css@master/4.0.0/4.0.0.css" type="text/css" media="all" />
 
         <script src="../tag.js"></script>
-        <script src="../toko.js"></script>
+        <script src="../tools/toko.js"></script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
@@ -36,6 +36,7 @@
             font-size: 14px;
             color: #333;
             font-weight: bold;
+            display: inline-block;
         }
         .btn {
             color : #fff !important;
@@ -71,7 +72,7 @@
     </style>
     <script type="text/javascript">
         $(document).ready(function(){
-            irpieTag("span","tag");
+            irTag("span","tag");
         });
     </script>
 
@@ -84,32 +85,32 @@
                         <div id="inner-content" class="justify pd-tb-xl">
                             Description
                         </div>
-                        <div class="col50 res2-1 left">
+                        <div class="col50 res3-1 left">
                             <div class="content-m">
                                 <img src="https://cdn.worldcosplay.net/107152/oyranvrkytwagxnlvhxjovlfmaqniwduwjumnosr-740.jpg" class="img-res main-img">
                             </div>
                             <div id="thumbnail" class="pd-tb-xl col">
                               
                               <div class="col25 res4-2-2 left content-m">
-                                <img src="https://cdn.worldcosplay.net/107152/oyranvrkytwagxnlvhxjovlfmaqniwduwjumnosr-740.jpg" class="img-res pointer"> 
+                                <img src="https://cdn.worldcosplay.net/107152/oyranvrkytwagxnlvhxjovlfmaqniwduwjumnosr-740.jpg" class="img-res cursor-pointer"> 
                               </div>
 
                               <div class="col25 res4-2-2 left content-m">
-                                <img src="https://cdn.worldcosplay.net/107152/coqreqcqcywdygkjnsoiwlvdtslalkjjvrzjthfy-740.jpg" class="img-res pointer"> 
+                                <img src="https://cdn.worldcosplay.net/107152/coqreqcqcywdygkjnsoiwlvdtslalkjjvrzjthfy-740.jpg" class="img-res cursor-pointer"> 
                               </div>
 
                               <div class="col25 res4-2-2 left content-m">
-                                <img src="https://cdn.worldcosplay.net/107152/bicpburryeygunvznixvygqrvyiobctcvbqivngo-740.jpg" class="img-res pointer"> 
+                                <img src="https://cdn.worldcosplay.net/107152/bicpburryeygunvznixvygqrvyiobctcvbqivngo-740.jpg" class="img-res cursor-pointer"> 
                               </div>
 
                               <div class="col25 res4-2-2 left content-m">
-                                <img src="https://cdn.worldcosplay.net/107152/bvlpvxrazugdavtpqcwlpckaxhliewclvmfopibh-740.jpg" class="img-res pointer"> 
+                                <img src="https://cdn.worldcosplay.net/107152/bvlpvxrazugdavtpqcwlpckaxhliewclvmfopibh-740.jpg" class="img-res cursor-pointer"> 
                               </div>
 
                               <div class="clear"></div>
                           </div>
                         </div>
-                        <div class="col50 res2-1 left">
+                        <div class="col50 res3-1 left">
                             <table class="table table-clear table-line table-m full">
                                 <tbody>
                                     <tr>

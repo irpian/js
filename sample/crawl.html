@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Sample FIle Crawl</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/irpian/css@master/4.0.0/4.0.0.css" type="text/css" media="all" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover" />
+        <style>
+            #crawlLoader {
+                min-height: 10px;
+                border-radius: 4px;
+                position: relative;
+            }
+
+            .ircrawl-item{
+                padding-top: 6px;
+                padding-bottom: 12px;
+                border-bottom: solid 1px #ddd;
+            }
+
+            .bg-loader {
+                background-color: #f5f5f5;
+                width: 100%;
+                height: 10px;
+                border-radius: 4px;
+                margin-top: -10px;
+            }
+        </style>
+
+        <script src="../tools/crawl.js"></script>
+        <script>
+            $(document).ready(function() {
+                //const crawlUrl = "http://tools.com/sampah/"; 
+                const crawlUrl = "http://tools.com/acefiles/cronjson.php";
+                const crawlMethod = "get";
+                const crawlTimer = "5000";
+                const crawlPrepends = "10";
+
+                ircrawl(crawlUrl, crawlMethod, crawlTimer, crawlPrepends);
+
+                // $( "#crawlLoader" ).animate({
+                //     opacity: 0.25,
+                //     left: "+=50",
+                //     height: "toggle"
+                // }, 5000, function() {
+                //     // Animation complete.
+                // });
+            });
+        </script>
+    </head>
+    <body class="font-arial" id="list">
+
+        <!-- <form id="ircrawlForm">
+            <input name="test" type="text" value="sample Value">
+        </form> -->
+
+        <div class="wrapper-xs round-m res3-1 mg-t-xl shadow-m res3-c list">
+            <div class="content-m">
+                <div id="crawlLoader"></div>
+                <div class="bg-loader"></div>
+            </div>
+            <div class="col100 content-xl pd-tb-xl" id="ircrawlContent">
+                <h1 class="title-xl ircrawl-item">Process...</h1>
+            </div>
+        </div>
+
+    </body>
+
+</html>
