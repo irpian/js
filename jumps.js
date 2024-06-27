@@ -73,16 +73,23 @@
         }
 
         //generate url
-        function generateDataUrlImg(randomUrl) { 
+        function generateDataUrl(randomUrl) { 
             var elems = $('a.jump-url');
             for (var i = 0; i < elems.length; i++){
                 elems[i]['href'] = randomUrl +"?data="+btoa(elems[i]['href']+"|"+elems[i]['title']); 
             }
         }
 
-        var index_url = Math.floor(Math.random() * jump_url.length);
-        generateDataUrlImg(jump_url[index_url]); //a.generate-jump-img
+        function generateDataUrlImg(randomUrl) { 
+            var elems = $('a.generate-jump-img');
+            for (var i = 0; i < elems.length; i++){
+                elems[i]['href'] = randomUrl +"?data="+btoa(elems[i]['href']+"|"+elems[i]['title']); 
+            }
+        }
 
+        var index_url = Math.floor(Math.random() * jump_url.length);
+        generateDataUrl(jump_url[index_url]);
+        generateDataUrlImg(jump_url[index_url]);
     });
 
 
